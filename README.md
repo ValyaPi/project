@@ -1,2 +1,1 @@
-# project
-# [my_project_HTML](https://ValyaPi/project.git)
+# [my_project_HTML](https://ValyaPi/project)
