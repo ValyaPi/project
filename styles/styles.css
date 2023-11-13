@@ -1,4 +1,15 @@
+html, 
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
     color: #1f1e1e;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -83,6 +94,9 @@
 
 
 .page-header__user-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     box-sizing: border-box;
     text-decoration: none;
     padding: 15px 40px;
@@ -181,7 +195,12 @@
     align-self: center;
 }
 .title {
-    margin: 0 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 62px;
+    line-height: 1.277;
+    margin: 0 auto 150px;
     box-sizing: border-box;
     padding: 7px 45px 9px;
     max-width: 624px;
@@ -197,7 +216,14 @@
 }
 
 .listing {
+    box-sizing: border-box;
     display: flex;
+
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
     flex-wrap: wrap;
     gap: 120px 60px;
 }
