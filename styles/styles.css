@@ -1,17 +1,27 @@
 .body{
+    color: #1f1e1e;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.375;
 }
+.page-header__nav { 
+    display: inline-block;
+        
+}
 .page-header__nav-link {
     margin: 0 25px;
-    color: #000000;
+    color: #1f1e1e;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
+    transition: color 0.2s;
+}
+
+.page-header__nav-link:hover{
+    color: #bc3324;
 }
 .page-header{
     position: fixed;
@@ -20,6 +30,10 @@
     width: 100%;
     height: 147px;
     z-index: 100;
+    background-color: rgba(222, 222, 222, 0.50);
+    backdrop-filter: blur(20px);
+    align-items: center;
+    display: flex;
 
 
 }
@@ -40,6 +54,9 @@
 
 .page-header-conteiner{
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     margin: 0 auto;
     padding-left: 40px;
@@ -51,10 +68,12 @@
 
 
 .page-header__logo{
-    margin-right: 237px;
+    flex-shrink: 0;
     display: inline-block;
     width: 202px;
     height: 147px;
+    font-size: 0;
+    text-decoration: none;
 
 }
 .page-header__logo-img{
@@ -62,11 +81,7 @@
     height: 100%;
 }
 
-.page-header__nav { 
-    display: inline-block;
-    margin-right: 230px;
-        
-}
+
 .page-header__user-btn{
     box-sizing: border-box;
     text-decoration: none;
@@ -81,7 +96,9 @@
 .home{
     padding-top: 147px;
 }
-
+.main{
+    flex: 1 0 auto;
+}
 .main-header__title,
 .main-header__text{
     padding-left: 40px;
@@ -127,6 +144,132 @@
 
 }
 
+.btn {
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 15px 40 px;
+    border: 1px solid #1f1e1e;
+    background-color: transparent;
+    outline: 0;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 52px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: #1f1e1e;
+    color: #ffffff;
+
+}
+
+.events {
+    padding-top: 147px;
+}
+.events__container{
+    flex-direction: column;
+}
+.events__title{
+    align-self: center;
+}
+.title {
+    margin: 0 0 150px;
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    background-color: #1f1e1e;
+    text-transform: uppercase;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 60px;
+}
+.listing__card-event {
+    max-width: 405px;
+    width: calc(33.333% - 40px);
+}
+.card-event{
+    box-sizing: border-box;
+
+}
+.card-event__link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-event__link:hover .card-event__title{
+    color:#A51505;
+    text-decoration-color: #A51505;
+}
+.card-event__picture {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+.card-event__picture::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 107.160%;
+}
+
+.card-event__picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-event__title{
+    margin: 0 0 auto;
+    min-height: 64px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: #1F1E1E;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: color 0.2s, text-decoration-color 0.23s;
+}
+.card-event__text{
+    margin: 15px 0;
+    color: #1F1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.card-event__time{
+    display: block;
+    margin-top: auto;
+    color: #1F1E1E;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+}
 .page-footer {
+    flex: 0 0 auto;
 
 }
