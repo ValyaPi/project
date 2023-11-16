@@ -232,6 +232,7 @@ body{
 }
 .card-event{
     box-sizing: border-box;
+    display: flex;
 
 }
 .card-event__link{
@@ -239,6 +240,8 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    color: #1F1E1E;
 }
 .card-event__link:hover .card-event__title{
     color:#A51505;
@@ -247,7 +250,11 @@ body{
 .card-event__picture {
     position: relative;
     display: block;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
+    font-size: 0;
+    width: 100%;
+    text-decoration: none;
+    overflow: hidden;
 }
 .card-event__picture::before {
     content: '';
@@ -257,6 +264,7 @@ body{
 }
 
 .card-event__picture{
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -291,6 +299,7 @@ body{
     margin-top: auto;
     color: #1F1E1E;
     font-size: 14px;
+    line-height: 19px;
     font-weight: 300;
     font-style: normal;
 }
