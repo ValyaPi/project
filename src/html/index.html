@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  @@include('blocks/head.html')
+@@include('blocks/head.html')
 
-  <body class="body">
-    
-    @@include('blocks/page-header.html')
+<body class="body">
 
-    <main class="main">
-      <div class="home">
-        <header class="main-header home__main-header" >
-          <h1 class="main-header__title">Aрт — пространство</h1>
-          <picture class="main-header__picture">
-            <img src="assets/icons/LENNI.png"
-            class="main-header__img"/>
-          </picture>
-          <p class="main-header__text">для людей, горящих сердец и делом 
-            место для настоящего</p>
-        </header>
-        <section class="offers home__offers"></section>
-        <section class="about home__about"></section>
-        <section class="upcoming home__upcoming"></section>
-        <section class="listing home__listing"></section>
-        <section class="contacts home__contacts"></section>
+  @@include('blocks/page-header.html')
 
-        <div class="doit home__doit"></div>
+  <main class="main">
+    <div class="home">
+      <header class="main-header home__main-header">
+        <h1 class="main-header__title">Aрт — пространство</h1>
+        <picture class="main-header__picture">
+          <img src="assets/icons/LENNI.png" class="main-header__img" />
+        </picture>
+        <p class="main-header__text">для людей, горящих сердец и делом <br>
+          место для настоящего</p>
+
+
+        @@include('blocks/iwanna.html')
+
+
+
+
+
+
+      </header>
+      <section class="offers home__offers"></section>
+      @@include('blocks/about.html', { class: 'home__about' })
+
+      @@include('blocks/upcoming.html', { class: 'home__upcoming' })
+      <!-- <section class="upcoming home__upcoming"></section> -->
+      <!-- <section class="listing home__listing"></section> -->
+      @@include('blocks/blog-listing.html', { class: 'home__listing' })
+      @@include('blocks/contacts.html', { class: 'home__contacts' })
+
+<!-- 
+      <div class="doit home__doit">
+        <p class="home__do home__do--1">Просто делайте, что нравится</p>
+        <p class="home__do home__do--2">а мы вам поможем</p>
+      </div> -->
+
+
+      
+      <div class="doit home__doit">
+        <p class="home__do home__do--1">Просто делайте, что нравится,<br>
+        а мы вам поможем</div>p>
       </div>
-    </main>
+    </div>
+  </main>
 
-   
-  </body>
   @@include('blocks/page-footer.html')
+
+  @@include('blocks/event-pp.html')
+</body>
+
 
 </html>

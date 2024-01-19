@@ -1,7 +1,7 @@
 .btn{
     display: inline-flex;
     box-sizing: border-box;
-    padding: 15px 40 px;
+    padding: 15px 40px;
     border: 1px solid #1f1e1e;
     background-color: transparent;
     outline: 0;
@@ -20,10 +20,30 @@
 
     &:active{
         background-color: @black;
+        color: @white;
     }
 
     &:hover{
         background-color: #1f1e1e;
         color: #ffffff;
+    }
+
+    &--black{
+        width: 245.881px;
+        padding: 15px 40px;
+        align-items: center;
+    }
+
+    &--red{
+        background-color: @red;
+        border: transparent;
+        color: @white;
+        padding: 15px 40px;
+        align-items: center;
+
+        &--buy{
+            padding: 15px 131px;
+        }
+
     }
 }

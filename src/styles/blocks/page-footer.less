@@ -1,3 +1,121 @@
 .page-footer {
-    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 60px 0 75px;
+
+    &__container {
+        .container;
+    }
+
+    &__border {
+        display: flex;
+        margin-bottom: 60px;
+
+        &::before,
+        &::after {
+            content: '';
+            flex-grow: 1;
+            height: 2px;
+            margin: 2px;
+        }
+
+        &::before {
+            margin-right: 50px;
+            background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
+        }
+
+        &::after {
+            margin-left: 50px;
+            background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 100%);
+        }
+
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        margin-right: 30px;
+        position: relative;
+        padding-left: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: @red;
+        }
+    }
+
+    &__nav-link {
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: @black;
+        transition: color 0.2s;
+
+        &:hover {
+            @media (hover:hover) {
+                color: @red;
+            }
+        }
+
+        &:active {
+            color: @red;
+        }
+    }
+
+    &__millennials {
+        color: @black;
+        font-family: @font1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -64px;
+        margin-bottom: 20px;
+        text-align: left;
+
+    }
+
+    &__end {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        color: @black;
+        font-family: @font1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+
+        &--1 {
+            display: flex;
+            justify-content: flex-start;
+            gap: 60px;
+        }
+
+        &--2 {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+    }
+
+
+    &__end-link {
+        text-decoration: none;
+    }
+    &__tagree{
+        padding-top: 4px;
+    }
 }

@@ -1,7 +1,6 @@
-.card-event{
-    box-sizing: border-box;
+.event-card{
     display: flex;
-    width: 405 px;
+    width: 405px;
     max-width: 100%;
     min-width: 280px;
     color: @black;
@@ -11,9 +10,7 @@
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        height: 100%;
         width: 100%;
-        color: #1F1E1E;
         &:active {
             .card-event__title{
                 color: @red;
@@ -40,7 +37,7 @@
             content: '';
             display: block;
             width: 100%;
-            padding-top: 107.160%;
+            // padding-top: 107.160%;
         }
     }
 
@@ -49,7 +46,7 @@
         min-height: 64px;
         text-decoration: underline;
         text-decoration-color: transparent;
-        color: #1F1E1E;
+        color: @black;
         font-family: Open Sans;
         font-size: 24px;
         font-style: normal;
@@ -59,7 +56,7 @@
     }
     &__text{
         margin: 15px 0;
-        color: #1F1E1E;
+        color: @black;
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
@@ -68,7 +65,7 @@
     &__time{
         display: block;
         margin-top: auto;
-        color: #1F1E1E;
+        color: @black;
         font-size: 14px;
         line-height: 19px;
         font-weight: 300;
