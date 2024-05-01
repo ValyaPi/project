@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 @@include('blocks/head.html')
 
@@ -13,7 +13,7 @@
       <header class="main-header home__main-header">
         <h1 class="main-header__title">Aрт — пространство</h1>
         <picture class="main-header__picture">
-          <img src="assets/icons/LENNI.png" class="main-header__img" />
+          <img src="assets/icons/LENNI.png" class="main-header__img" alt=""/>
         </picture>
         <p class="main-header__text">для людей, горящих сердец и делом <br>
           место для настоящего</p>
@@ -46,7 +46,8 @@
       
       <div class="doit home__doit">
         <p class="home__do home__do--1">Просто делайте, что нравится,<br>
-        а мы вам поможем</div>p>
+        а мы вам поможем
+      </p>
       </div>
     </div>
   </main>
@@ -54,7 +55,14 @@
   @@include('blocks/page-footer.html')
 
   @@include('blocks/event-pp.html')
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script src="scripts/jquery.selectric.min.js"></script>
+<script src="scripts/jquery.mask.min.js"></script>
+
+
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/main.min.js"></script>
 </body>
-
-
 </html>

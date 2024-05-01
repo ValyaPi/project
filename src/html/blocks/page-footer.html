@@ -9,12 +9,19 @@
                 <a href="" class="page-footer__nav-link">Наши проекты</a>
                 <a href="" class="page-footer__nav-link">Контакты</a>
             </nav>
-            <form class="page-footer__form subscribe">
+            <form class="page-footer__form subscribe subscribe-form" 
+            action="https://jsonplaceholder.typicode.com/posts"
+                id="js-subscribeForm">
                 <h4 class="subscribe__title">
                     Подпишись и будь в курсе происходящего
                 </h4>
                 <div class="subscribe__wrapper">
-                    <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+                    <input type="email" 
+                    name="email" 
+                    placeholder="Email" 
+                    class="subscribe__input" 
+                    required 
+                    id="js-subscribeEmail"/>
                     <button type="submit" class="subscribe__submit">Подписаться</button>
                 </div>
                 <label class="subscribe__check check">
@@ -28,20 +35,20 @@
                 </label>
             </form>
         </div>
-<div class="svg-contacns">
-    <div class="svg-contacns__img">
-        <svg class="svg-contacns__icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#insta"></use>
-        </svg>
-    </div>
-    <div class="svg-contacns__img">
-        <svg class="svg-contacns__icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#la_vk"></use>
-        </svg>
-    </div>
+        <div class="svg-contacns">
+            <div class="svg-contacns__img">
+                <svg class="svg-contacns__icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#insta"></use>
+                </svg>
+            </div>
+            <div class="svg-contacns__img">
+                <svg class="svg-contacns__icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#la_vk"></use>
+                </svg>
+            </div>
 
 
-</div>
+        </div>
 
         <p class="page-footer__millennials">© Millennials 2022</p>
         <div class="page-footer__end">

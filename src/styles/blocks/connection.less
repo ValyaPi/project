@@ -2,17 +2,48 @@
 
     &__container {
         .container;
+
+        
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        
     }
 
     &__items {
         display: flex;
         flex-direction: row;
         gap: 64px;
+
+        display: flex;
+        flex-wrap: wrap;
+        @media @bw1660 {
+            justify-content: center;
+
+            margin: 0 -20px -100px;
+          }
+          @media @bw1340 {
+            justify-content: center;
+
+            margin: 0 -15px -100px;
+          }
+          @media @bw1020 {
+            justify-content: center;
+
+            margin: 0 -15px -80px;
+          }
+          @media @bw768 {
+            justify-content: center;
+
+            margin: 0 -10px -80px;
+          }
+          @media @bw650 {
+            justify-content: center;
+            margin: 0 0 -60px;
+          }
 
     }
 }

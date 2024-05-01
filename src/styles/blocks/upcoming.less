@@ -1,12 +1,37 @@
 .upcoming{
     &__back{
+        
+        width: auto;
         z-index: -1;
         position: absolute;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
         margin-top: -120px;
+
 
     }
 
     &__title{
         margin-top: 120px;
     }
+
+    &__container {
+        .container();
+        padding-top: 110px;
+    }
+    &__link {
+        margin-top: 15px;
+        justify-content: end;
+
+        @media @bw960 {
+            margin-top: 33px;
+        }
+    }
+
+    &__swiper{
+        .container()
+    }
+
 }
